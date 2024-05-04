@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            max-width: 700px;
+        }
+        .todo{
+            background: var(--body-bg);
+            padding: 1em;
+            margin-bottom: 1em;
+            border-radius: 5px;
+            position: relative;
+        }
+        .todo .title{
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-bottom: .5rem;
+        }
+        #form{margin-top: 2em;}
+        #form input,
+        #form textarea{
+            margin-bottom: 1em;
+        }
+        .remove-btn{
+            position: absolute;
+            right: 1em;
+            top: 1em;
+            background: #dd360d;
+            color: #fff;
+            padding: 2px 8px;
+            font-weight: bold;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-1 mx-auto">
+        <h1>Todo App</h1>
+        <form action="#" id="form">
+            <input type="text" id="title" placeholder="Title">
+            <textarea id="description" placeholder="Description"></textarea>
+            <button type="submit" class="bg-main color-light">Add</button>
+        </form>
+        <div class="my-2" id="todos">
+            <!-- <div class="todo">
+                <p class="title">Todo Title</p>
+                <p>Todo Description</p>
+                <span class="remove-btn">-</span>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
